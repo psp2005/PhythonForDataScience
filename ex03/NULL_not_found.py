@@ -1,20 +1,19 @@
-def all_thing_is_obj(object: any) -> int:
-    type_names = {
-        list: "List",
-        tuple: "Tuple",
-        set: "Set",
-        dict: "Dict",
-        str: "String"
-    }
+# def NULL_not_found(object: any) -> int:
 
-    object_type = type(object)
-    type_name = type_names.get(object_type, "Type not found")
 
-    if object_type == str:
-        print(f"{object} is in the kitchen : {object_type}")
-    elif type_name != "Type not found":
-        print(f"{type_name} : {object_type}")
-    else:
-        print(f"{type_name}")
 
-    return 42
+Nothing = None
+Garlic = float("NaN")
+Zero = 0
+Empty = ""
+Fake = False
+
+case = [Nothing, Garlic, Zero, Empty, Fake]
+
+
+
+for item in case:
+    print(item)
+    print(type(item))
+
+
